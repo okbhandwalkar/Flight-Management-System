@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Flight Management System</h1>
+
+    <div class="container">
+        <div class="section">
+            <h2>Flight Search</h2>
+            <form id="searchForm">
+                <label for="departure">Departure:</label>
+                <input type="text" id="departure" name="departure" required>
+                
+                <label for="arrival">Arrival:</label>
+                <input type="text" id="arrival" name="arrival" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <button type="submit">Search Flights</button>
+            </form>
+            <div id="searchResults"></div>
+        </div>
+
+        <div class="section">
+            <h2>Flight Booking</h2>
+            <form id="bookingForm">
+                <label for="flight">Flight:</label>
+                <input type="text" id="flight" name="flight" required>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="passport">Passport Number:</label>
+                <input type="text" id="passport" name="passport" required>
+
+                <label for="card">Card Number:</label>
+                <input type="text" id="card" name="card" required>
+
+                <label for="expiry">Expiry Date:</label>
+                <input type="month" id="expiry" name="expiry" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+
+                <button type="submit">Book Flight</button>
+            </form>
+            <div id="bookingResult"></div>
+        </div>
+
+        <div class="section">
+            <h2>Flight Schedule</h2>
+            <form id="scheduleForm">
+                <label for="flightNumber">Flight Number:</label>
+                <input type="text" id="flightNumber" name="flightNumber" required>
+                
+                <button type="submit">View Schedule</button>
+            </form>
+            <div id="scheduleResult"></div>
+        </div>
+
+        <div class="section">
+            <h2>Cancel Flight</h2>
+            <form id="cancelForm">
+                <label for="bookingReference">Booking Reference:</label>
+                <input type="text" id="bookingReference" name="bookingReference" required>
+                
+                <button type="submit">Cancel Flight</button>
+            </form>
+            <div id="cancelResult"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
